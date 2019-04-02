@@ -1,0 +1,446 @@
+/*Font Google*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Dosis:300,400');
+
+/*Estilos del Body*/
+html,
+body {
+    font-size: 16px;
+    /*background-image: url(../img/fondo.jpg);*/
+    /*Estilos para usar imagenes en Body*/
+    /*background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+/*Espacio de titulos*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size:1.2rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*Estilos de los titulos*/
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4D4D4D;
+}
+
+/*Estilos de los Sub-titulos*/
+
+.sub-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    color: #4D4D4D;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*------------------------------------------------------
+                Centrado de la imagen
+------------------------------------------------------*/
+.img-center {
+    margin: 0 auto;
+    padding: 10px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-rounded {
+    border-radius: 6%;
+}
+/*----------------------------------------------------
+Galeria
+----------------------------------------------------*/
+.demo-gallery > ul {
+        list-style: none;
+        margin-bottom: 0;
+    }
+    
+    .demo-gallery > ul > li {
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        width: 200px;
+    }
+    
+    .demo-gallery > ul > li a {
+        border: 3px solid #FFF;
+        border-radius: 3px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        float: left;
+    }
+    
+    .demo-gallery > ul > li a > img {
+        -webkit-transition: -webkit-transform 0.15s ease 0s;
+        -moz-transition: -moz-transform 0.15s ease 0s;
+        -o-transition: -o-transform 0.15s ease 0s;
+        transition: transform 0.15s ease 0s;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .demo-gallery > ul > li a:hover > img {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    
+    .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+        opacity: 1;
+    }
+    
+    .demo-gallery > ul > li a .demo-gallery-poster {
+        background-color: rgba(0, 0, 0, 0.1);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transition: background-color 0.15s ease 0s;
+        -o-transition: background-color 0.15s ease 0s;
+        transition: background-color 0.15s ease 0s;
+    }
+    
+    .demo-gallery > ul > li a .demo-gallery-poster > img {
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: opacity 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s;
+    }
+    
+    .demo-gallery > ul > li a:hover .demo-gallery-poster {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .demo-gallery .justified-gallery > a > img {
+        -webkit-transition: -webkit-transform 0.15s ease 0s;
+        -moz-transition: -moz-transform 0.15s ease 0s;
+        -o-transition: -o-transform 0.15s ease 0s;
+        transition: transform 0.15s ease 0s;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .demo-gallery .justified-gallery > a:hover > img {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    
+    .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+        opacity: 1;
+    }
+    
+    .demo-gallery .justified-gallery > a .demo-gallery-poster {
+        background-color: rgba(0, 0, 0, 0.1);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transition: background-color 0.15s ease 0s;
+        -o-transition: background-color 0.15s ease 0s;
+        transition: background-color 0.15s ease 0s;
+    }
+    
+    .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: opacity 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s;
+    }
+    
+    .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .demo-gallery .video .demo-gallery-poster img {
+        height: 48px;
+        margin-left: -24px;
+        margin-top: -24px;
+        opacity: 0.8;
+        width: 48px;
+    }
+    
+    .demo-gallery.dark > ul > li a {
+        border: 3px solid #04070a;
+    }
+    
+    .home .demo-gallery {
+        padding-bottom: 80px;
+    }
+/*----------------------------------------------------------
+                        Lista de Item
+----------------------------------------------------------*/
+.list {
+    list-style: none;
+}
+
+.list li p {
+    font-size: 14px;
+}
+
+.list li p i {
+    font-size: 20px;
+    color: #F7D04A;
+    margin-right: 5px;
+}
+/*------------------------------------------------------------
+                            Icons SVG
+------------------------------------------------------------*/
+.icon__info {
+    width: 64px;
+}
+.icon__contact {
+    width: 32px;
+}
+/*------------------------------------------------------------
+                            Separador
+------------------------------------------------------------*/
+
+.separator-1 {
+    width: 100px;
+    height: 3px;
+    background-color: #00CED1;
+    border: 0;
+    /*Quita los bordes*/
+    margin: auto;
+    /*Para centrarlo*/
+}
+.separator-2 {
+    width: 100px;
+    height: 3px;
+    background-color: #C0C0C0;
+    border: 0;
+    /*Quita los bordes*/
+    margin: auto;
+    /*Para centrarlo*/
+}
+
+.separator-small {
+    width: 100px;
+    height: 1px;
+    background-color: #FF6347;
+    border: 0;
+    /*Quita los bordes*/
+    margin: auto;
+    /*Para centrarlo*/
+}
+/*---------------------------------------------------------------------
+                                Card
+---------------------------------------------------------------------*/
+
+.card__product {
+    padding: 10px;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+.card__product h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4C4A48;
+}
+
+.card__product p {
+    font-size: .9rem;
+    color: #4C4A48;
+}
+
+.card__product:hover {
+    background-color: rgba(255,99,71 ,.1);
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+/*-----------------------------------------------------------------------
+                            Formulario
+-----------------------------------------------------------------------*/
+
+.formulario {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.item-form {
+    padding: 10px 0;
+}
+
+.item-form img {
+    margin-right: 10px;
+}
+
+.item-form p {
+    font-weight: 600;
+}
+
+.item-form a {
+    font-weight: 600;
+}
+
+.item-form a:hover {
+    color: #FF6347;
+    border-bottom: 1px solid #FF6347;
+}
+
+/*-------------------------------------------------------------------
+                            Botones
+-------------------------------------------------------------------*/
+
+.button-send-o {
+    background: transparent !important;
+    color: #00CED1 !important;
+    border: 1px solid #00CED1;
+    /*Transition*/
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+
+/*-----------------------------------------------------
+                        Efectos
+-----------------------------------------------------*/
+
+.button-send-o:hover {
+    background: #00CED1 !important;
+    color: #fff !important;
+    border: 1px solid #00CED1;
+    /*Transition*/
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+.button-resert-o {
+    background: transparent !important;
+    color: #FF6347;
+    border: 1px solid #FF6347;
+    /*Transition*/
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+.button-resert-o:hover {
+    background: #FF6347 !important;
+    color: #fff !important;
+    border: 1px solid #FF6347;
+    /*Transition*/
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+/*-----------------------IMAGEN ZOOM------------------------*/
+
+.img-zoom img {
+    /*border: 5px solid rgba(0,0,0,.1);*/
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+}
+
+.img-zoom img:hover {
+    /*border: 6px solid rgba(0, 0, 0, .3);*/
+    -webkit-transform: scale(1.12, 1.12);
+    -moz-transform: scale(1.12, 1.12);
+    -o-transform: scale(1.12, 1.12);
+    transform: scale(1.12, 1.12);
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+}
+/*------------------------------Efecto sombra------------------------------*/
+.img-box-shadow {
+    margin: 30px auto;
+    animation: boxShadow 3s linear infinite;
+}
+@keyframes boxShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0,206,209,.7), 0 0 0 0 rgba(0,206,209,.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(0,206,209,0), 0 0 0 0 rgba(0,206,209,.7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0,206,209,0), 0 0 0 30px rgba(0,206,209,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,206,209,0), 0 0 0 30px rgba(0,206,209,0);
+    }
+}
+
+
+/*----------------------------------------------------------------------------------
+                                    Pack Iconos
+----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------
+                                    Media Query
+----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 425px) {}
+
+@media screen and (min-width: 375px) {}

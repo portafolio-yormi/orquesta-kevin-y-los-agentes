@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Orquesta Kevin y Los Agentes</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+
+<body class="size-960" data-vide-bg="video/video-2" data-vide-options="loop: true, position: 0% 50%;">
+    <!-- HEADER -->
+    <header>
+        <div class="line">
+            <div class="box">
+                <div class="s-12 l-4 center">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+        </div>
+        <!-- TOP NAV -->
+        <div class="line">
+            <nav class="margin-bottom">
+                <p class="nav-text">Men&uacute;</p>
+                <div class="top-nav s-12 l-6 center">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="show.html">Show</a></li>
+                        <li><a href="galeria.html">Galer&iacute;a</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <!-- BANER -->
+        <div class="line">
+            <div class="box margin-bottom">
+                <img src="img/banner-contact.jpg">
+            </div>
+        </div>
+        <!-- ASIDE NAV AND CONTENT -->
+        <div class="line">
+            <div class="box margin-bottom">
+                <div class="margin">
+                    <!-- CONTENT -->
+                    <article class="s-12 m-12 l-12">
+                        <div class="box">
+                            <div class="s-12 m-12 l-12">
+                                <h1 class="text-center title">Contacto</h1>
+                                <hr class="separator-1"></hr>
+                            </div>
+                        </div>
+                        <!-- Fomlario deE-mail -->
+                        <div class="s-12 m-6 l-6">
+                            <form action="process.php" id="formulario" class="center clicform" method="POST">
+                                <label for="nombre" class="required">Nombre</label>
+                                <input type="text" required name="nombre" placeholder="Inserte su nombre">
+                                <br>
+                                <label for="email" class="required">Asunto</label>
+                                <input type="text" required placeholder="Inserte el asunto del mensaje" name="asunto">
+                                <br>
+                                <label for="email" class="required">E-mail</label>
+                                <input type="email" required placeholder="Ingrese su dirección de E-mail" name="email">
+                                <br>
+                                <label for="email" class="required">Mensaje</label>
+                                <textarea name="mensaje" rows="4" required placeholder="Deje su mensaje"></textarea>
+                                <br>
+                                <div class="s-12 m-6 margin-bottom">
+                                    <input type="reset" class="reset button-resert-o" value="Borrar Todo">
+                                </div>
+                                <div class="s-12 m-6 margin-bottom">
+                                    <input type="submit" class="enviar button-send-o" value="Enviar">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="s-12 m-6 l-6">
+                            <div class="formulario">
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/phone-1.svg" alt="">
+                                    <p>994260383 | 991215955 </p>
+                                </div>
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/smartphone-1.svg" alt="">
+                                    <p>6591850</p>
+                                </div>
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/mail-3.svg" alt="">
+                                    <p>kevinylosagentes@yahoo.com</p>
+                                </div>
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/localizacion-2.svg" alt="">
+                                    <p>Calle Pirandello 499 – San Borja – Lima – Lima</p>
+                                </div>
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/facebook-circle.svg" alt="">
+                                    <a target="_blank" href="https://www.facebook.com/kevinylosagentes"> @kevinylosagentes</a>
+                                </div>
+                                <div class="item-form">
+                                    <img class="icon__contact" align="left" src="img/icon/youtube.svg" alt="">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCkNqfDrnVjf8lmtM99FH6Aw">Kevin y los Agentes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="line">
+        <div class="box">
+            <div class="s-12 l-6">
+                <p>Copyright <smal id="fecha"></smal>, Derechos reservados</p>
+            </div>
+            <div class="s-12 l-6">
+                <a class="right" href="http://www.clicnovo.com" title="ClicNovo Google Partner">Design by <strong>ClicNovo</strong></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var ano = (new Date).getFullYear();
+        $("#fecha").text(ano);
+    </script>
+    <script src="js/formulario.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+       $("#owl-demo").owlCarousel({
+            navigation: true,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            autoPlay: true,
+            singleItem: true
+        });
+        $("#owl-demo2").owlCarousel({
+            items: 4,
+            lazyLoad: true,
+            autoPlay: true,
+            navigation: true,
+            pagination: false
+        });
+    });
+    </script>
+</body>
+
+</html>

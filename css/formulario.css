@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+    .clicform form, .clicform textarea {
+    margin-left: auto;
+    margin-right: auto;
+}
+.clicform form {
+    width: 100%;
+    display: table;
+}
+.clicform label {
+    display: block;
+    padding: 10px 0;
+    font-size: 9px;
+    text-align: left;
+}
+.clicform input, textarea {
+    width: 95%;
+    font-family: Roboto;
+    line-height: 140%;
+    outline: 0;
+}
+.clicform textarea {
+    display: table;
+    border: 2px solid #888;
+    transition: all 1s;
+    font-size: 13px;
+}
+.clicform textarea:focus {
+    width: 100%;
+    border-color: #FF6347;
+}
+.clicform input[type=text], input[type=email] {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: #888 solid 2px;
+    transition: all 1s;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clicform input[type=text]:valid, input[type=email]:valid {
+    border-bottom: #FF6347 solid 2px;
+}
+.clicform input[type=text]:focus, input[type=email]:focus {
+    border-bottom-color: #FF6347;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.clicform .lleno {
+    border-bottom-color: #FF6347;
+    width: 100%}
+.clicform .areaok {
+    border-color: #FF6347;
+    width: 100%}
+.clicform input[type=text]:focus+label {
+    color: #FF6347;
+}
+.clicform label.required::after {
+    content: " *";
+    color: red;
+}
+.clicform input[type=reset], input[type=submit] {
+    height: 50px;
+    /*border: none;*/
+    /*box-shadow: 0 5px 3px #ccc;*/
+    /*font-family: Roboto;*/
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.clicform .reset {
+    background-color: #f6c504;
+}
+.clicform .enviar {
+    background-color: #1cc392;
+    color: #fff;
+}
